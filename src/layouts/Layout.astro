@@ -1,22 +1,37 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="spm.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>SPM Delft 2025</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="spm.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>SPM Delft 2025</title>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SPM Delft" />
+    <meta name="twitter:description" content="Coming to you this summer" />
+    <meta name="twitter:image" content="https://spm-delft.eu/spm.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SPM Delft" />
+    <meta
+      property="og:description"
+      content="Coming to you this summer"
+    />
+    <meta property="og:url" content="https://spm-delft.eu/" />
+    <meta
+      property="og:image"
+      content="https://spm-delft.eu/spm.png"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
