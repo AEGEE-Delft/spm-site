@@ -1,11 +1,42 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import spm from "../assets/spm.png";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout>
-	<Welcome />
+  <div id="centered">
+    <h1>SPM Delft 2025</h1>
+    <Image src={spm} alt="SPM Logo" />
+    <p>Coming to you this summer</p>
+    <div id="logos">
+      <a href="https://www.instagram.com/spmdelft2025/"
+        ><Icon name="cib:instagram" /></a
+      >
+      <a href="https://aegee-delft.nl"><Icon name="a" /></a>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  #centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    color: #70096e;
+  }
+  img {
+    max-width: 95%;
+    height: auto;
+    
+  }
+  #logos {
+	padding: 2rem;
+  }
+  #logos > a {
+    margin: 3rem;
+  }
+</style>
