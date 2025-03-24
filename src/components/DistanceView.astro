@@ -20,6 +20,7 @@ const baseCost = 60;
 
 <div>
     <h1>SPM Price</h1>
+    <p>For this SPM we have decided to use pricing relative to the distance from your local to Delft. So closer locals will pay more and ones further away will pay less.</p>
     <select class="distanceSelector">
         {
             distances.map((distance) => (
@@ -35,8 +36,8 @@ const baseCost = 60;
 
     <p id="priceElement">Please select your local to calculate your price.</p>
     <p class="italic">
-        Note that this price is an indication for now, so it may go up or down a
-        small amount.<br>Note that Contacts are at the bottom of the list.
+        This price is an indication for now, so it may go up or down a small
+        amount.<br />Contacts are at the bottom of the list.
     </p>
 </div>
 
@@ -51,6 +52,7 @@ const baseCost = 60;
                 priceElement.innerText = `Your price is €${s.value}`;
             }
         });
+        s.dispatchEvent(new Event("change"));
     });
 </script>
 
@@ -75,5 +77,14 @@ const baseCost = 60;
 
     .italic {
         font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+        select {
+            font-size: 1rem;
+        }
+        p {
+            margin: 1rem;
+        }
     }
 </style>

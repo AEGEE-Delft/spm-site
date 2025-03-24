@@ -6,9 +6,9 @@ import "@fontsource/bebas-neue";
 ---
 
 <div class="wrapper">
-    <Image src={tu} alt="TU Delft" class="fill" />
+    <Image src={tu} alt="TU Delft" class="fill" loading="eager" />
     <div class="makePurple">
-        <Image src={spm} alt="SPM Delft" height="600" />
+        <Image src={spm} alt="SPM Delft" height="600" loading="eager" />
         <div>
             <h1>1 - 6 July 2025</h1>
         </div>
@@ -19,6 +19,7 @@ import "@fontsource/bebas-neue";
     .wrapper {
         position: relative;
         display: inline-block;
+        width: 100%;
     }
     .fill {
         width: 100%;
@@ -44,6 +45,14 @@ import "@fontsource/bebas-neue";
             color: white;
             background-color: purple;
             padding: 10px;
+        }
+        @media (max-width: 600px) {
+            img {
+                max-width: 90%;
+            }
+            div {
+                display: none;
+            }
         }
     }
 </style>

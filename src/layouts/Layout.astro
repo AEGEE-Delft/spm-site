@@ -3,14 +3,18 @@ import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 import spm from "../assets/spm_white.png";
 import "@fontsource/open-sans";
+import "@fontsource/bebas-neue"
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="icon" type="image/png" href="spm.png" />
+
     <meta name="generator" content={Astro.generator} />
     <title>SPM Delft 2025</title>
     <meta name="twitter:card" content="summary_large_image" />
@@ -25,22 +29,48 @@ import "@fontsource/open-sans";
   </head>
   <body>
     <header>
-      <Image src={logo} alt="Image" height="100" />
+      <Image
+        src={logo}
+        alt="Delft blue but purple"
+        height="100"
+        loading="eager"
+      />
       <nav>
-        <a href="/">Home</a>
+        <!-- <a href="/">Home</a>
         <a href="/about">What is the SPM?</a>
         <a href="/delft">Why Delft?</a>
         <a href="/programme">Programme</a>
-        <!-- <a href="/team">Team</a> -->
-        <a href="/contact">Contact</a>
+        <a href="/team">Team</a>
+        <a href="/contact">Contact</a> -->
       </nav>
-      <Image src={logo} alt="Image" height="100" class="flipped" />
+      <Image
+        src={logo}
+        alt="Delft blue but purple"
+        height="100"
+        class="flipped"
+        loading="eager"
+      />
     </header>
     <slot />
     <footer>
-      <Image src={spm} alt="SPM Delft: Delve into Dreams" height="400" />
-      <p>Organised by AEGEE-Delft for AEGEE-Europe</p>
+      <Image
+        src={logo}
+        alt="Delft blue but purple"
+        height="100"
+        class="upside-down"
+      />
 
+      <div>
+        <Image src={spm} alt="SPM Delft: Delve into Dreams" width="700" />
+        <p><a href="https://aegee-delft.nl">AEGEE-Delft</a></p>
+        <p><a href="https://aegee.eu">AEGEE-Europe</a></p>
+      </div>
+      <Image
+        src={logo}
+        alt="Delft blue but purple"
+        height="100"
+        class="flipped upside-down"
+      />
     </footer>
   </body>
 </html>
@@ -63,6 +93,13 @@ import "@fontsource/open-sans";
 
   .flipped {
     transform: scaleX(-1);
+    &.upside-down {
+      transform: scaleX(-1) scaleY(-1);
+    }
+  }
+
+  .upside-down {
+    transform: scaleY(-1);
   }
 
   nav {
@@ -85,18 +122,39 @@ import "@fontsource/open-sans";
   }
   footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     background-color: #e6bde5;
-    flex-direction: column;
+    flex-direction: row;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     p {
-      font-family: "Open Sans", sans-serif;
+      font-family: "Bebas Neue", sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
       text-align: center;
       margin-top: 20px;
+      color: white;
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
+    @media (max-width: 600px) {
+      img {
+        max-width: 90%;
+        height: auto;
+      }
+    }
   }
 </style>
