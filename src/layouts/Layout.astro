@@ -1,3 +1,10 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
+import spm from "../assets/spm_white.png";
+import "@fontsource/open-sans";
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,26 +19,84 @@
     <meta name="twitter:image" content="https://spm-delft.eu/spm-card.png" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="SPM Delft" />
-    <meta
-      property="og:description"
-      content="Coming to you this summer"
-    />
+    <meta property="og:description" content="Coming to you this summer" />
     <meta property="og:url" content="https://spm-delft.eu/" />
-    <meta
-      property="og:image"
-      content="https://spm-delft.eu/spm-card.png"
-    />
+    <meta property="og:image" content="https://spm-delft.eu/spm-card.png" />
   </head>
   <body>
+    <header>
+      <Image src={logo} alt="Image" height="100" />
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">What is the SPM?</a>
+        <a href="/delft">Why Delft?</a>
+        <a href="/programme">Programme</a>
+        <!-- <a href="/team">Team</a> -->
+        <a href="/contact">Contact</a>
+      </nav>
+      <Image src={logo} alt="Image" height="100" class="flipped" />
+    </header>
     <slot />
+    <footer>
+      <Image src={spm} alt="SPM Delft: Delve into Dreams" height="400" />
+      <p>Organised by AEGEE-Delft for AEGEE-Europe</p>
+
+    </footer>
   </body>
 </html>
 
-<style>
+<style lang="scss">
   html,
   body {
     margin: 0;
     width: 100%;
     height: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .flipped {
+    transform: scaleX(-1);
+  }
+
+  nav {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    a {
+      text-decoration: none;
+      color: white;
+      // smallcaps
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6bde5;
+    flex-direction: column;
+
+    p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 20px;
+    }
+
   }
 </style>
