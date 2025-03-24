@@ -1,0 +1,26 @@
+---
+import PageHeader from "../components/PageHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import "@fontsource/open-sans";
+---
+
+<Layout>
+    <PageHeader title="Contact" />
+    <main>
+        <p>
+            For any organisational questions, please send an email to <a
+                href="mailto:spm@aegee-delft.nl">spm@aegee-delft.nl</a
+            >
+        </p>
+    </main>
+</Layout>
+
+<style lang="scss">
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: "Open Sans", sans-serif;
+    }
+</style>

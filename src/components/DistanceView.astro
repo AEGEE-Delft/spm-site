@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+
+const distances = await getCollection("localDistance");
+
+function calcDiscount(distance: number): number {
+    if (distance <= 500) {
+        return 10;
+    } else if (distance <= 1000) {
+        return 5;
+    } else if (distance <= 1500) {
+        return -5;
+    } else {
+        return -10;
+    }
+}
+
+const baseCost = 60;
+---
+
+<div>
+    <h1>SPM Price</h1>
+    <p>For this SPM we have decided to use pricing relative to the distance from your local to Delft. So closer locals will pay more and ones further away will pay less.</p>
+    <select class="distanceSelector">
+        {
+            distances.map((distance) => (
+                <option
+                    value={baseCost + calcDiscount(distance.data.dist)}
+                    selected={distance.data.dist === 0}
+                >
+                    {distance.data.local}
+                </option>
+            ))
+        }
+    </select>
+
+    <p id="priceElement">Please select your local to calculate your price.</p>
+    <p class="italic">
+        This price is an indication for now, so it may go up or down a small
+        amount.<br />Contacts are at the bottom of the list.
+    </p>
+</div>
+
+<script>
+    let select =
+        document.querySelectorAll<HTMLSelectElement>(".distanceSelector");
+    let priceElement = document.getElementById("priceElement");
+
+    select.forEach((s) => {
+        s.addEventListener("change", (e) => {
+            if (priceElement !== null) {
+                priceElement.innerText = `Your price is €${s.value}`;
+            }
+        });
+        s.dispatchEvent(new Event("change"));
+    });
+</script>
+
+<style>
+    div {
+        font-family: "Open Sans", sans-serif;
+
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    select {
+        font-size: 1.5rem;
+        margin: 20px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+        select {
+            font-size: 1rem;
+        }
+        p {
+            margin: 1rem;
+        }
+    }
+</style>

@@ -1,0 +1,58 @@
+---
+import tu from "../assets/tu.png";
+import spm from "../assets/spm.png";
+import { Image } from "astro:assets";
+import "@fontsource/bebas-neue";
+---
+
+<div class="wrapper">
+    <Image src={tu} alt="TU Delft" class="fill" loading="eager" />
+    <div class="makePurple">
+        <Image src={spm} alt="SPM Delft" height="600" loading="eager" />
+        <div>
+            <h1>1 - 6 July 2025</h1>
+        </div>
+    </div>
+</div>
+
+<style lang="scss">
+    .wrapper {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .fill {
+        width: 100%;
+        height: auto;
+    }
+    .makePurple {
+        background: #E6BDE5CC;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Bebas Neue', sans-serif;
+        h1 {
+            font-size: 3em;
+            color: white;
+            background-color: purple;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            img {
+                max-width: 90%;
+            }
+            div {
+                display: none;
+            }
+        }
+    }
+</style>
