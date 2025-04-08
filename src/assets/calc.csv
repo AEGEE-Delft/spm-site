@@ -2,7 +2,6 @@ local,city,dist
 AEGEE-Aachen,Aachen,182
 AEGEE-Alicante,Alicante,1565
 AEGEE-Amsterdam,Amsterdam,54
-AEGEE-Angers,Angers,615
 AEGEE-Ankara,Ankara,2554
 AEGEE-Antalya,Antalya,2657
 AEGEE-Athina,Athina,2166
@@ -15,7 +14,7 @@ AEGEE-Berlin,Berlin,617
 AEGEE-Bilbao,Bilbao,1114
 AEGEE-Brescia,Brescia,837
 AEGEE-Brno,Brno,918
-AEGEE-Brussel-Bruxelles,Brussel,129
+AEGEE-Brussel-Bruxelles,Brussel-Bruxelles,129
 AEGEE-Bucureşti,Bucureşti,1808
 AEGEE-Budapest,Budapest,1165
 AEGEE-Burgos,Burgos,1232
@@ -31,21 +30,18 @@ AEGEE-Erfurt,Erfurt,475
 AEGEE-Eskişehir,Eskişehir,2419
 AEGEE-Firenze,Firenze,1049
 AEGEE-Gdańsk,Gdańsk,985
-AEGEE-Genova,Genova,910
 AEGEE-Gliwice,Gliwice,1014
 AEGEE-Groningen,Groningen,200
 AEGEE-Hamburg,Hamburg,415
 AEGEE-Hatay,Hatay,3045
 AEGEE-Heidelberg,Heidelberg,420
 AEGEE-Iaşi,Iaşi,1751
-AEGEE-Isparta,Isparta,2577
 AEGEE-İstanbul,İstanbul,2229
 AEGEE-İzmir,İzmir,2320
 AEGEE-Joensuu,Joensuu,1906
 AEGEE-Kaiserslautern-Saarbrücken,Kaiserslautern-Saarbrücken,372
 AEGEE-København,København,674
 AEGEE-Kraków,Kraków,1108
-AEGEE-Las Palmas,Las Palmas,7886
 AEGEE-Le Mans,Le Mans,535
 AEGEE-Leiden,Leiden,18
 AEGEE-León,León,1284
@@ -100,7 +96,10 @@ AEGEE-Warszawa,Warszawa,1134
 AEGEE-Wien,Wien,953
 AEGEE-Yerevan,Yerevan,3311
 AEGEE-Zaragoza,Zaragoza,1218
-AEGEE Contact in Bratislava,Bratislava,1004
-AEGEE Contact in Oslo,Oslo,963
-AEGEE Contact in Prishtina,Prishtina,1631
-AEGEE Contact in Veszprém,Veszprém,1117
+AEGEE-Contact in Bihac,Bihac,1164
+AEGEE-Contact in Bratislava,Bratislava,1004
+AEGEE-Contact in Oslo,Oslo,963
+AEGEE-Contact in Prishtina,Prishtina,1631
+AEGEE-Contact in Sarajevo,Sarajevo,1381
+AEGEE-Contact in Toulouse,Toulouse,959
+AEGEE-Contact in Veszprém,Veszprém,1117
