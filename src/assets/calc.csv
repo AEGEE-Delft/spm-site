@@ -4,7 +4,7 @@ AEGEE-Alicante,Alicante,1565
 AEGEE-Amsterdam,Amsterdam,54
 AEGEE-Ankara,Ankara,2554
 AEGEE-Antalya,Antalya,2657
-AEGEE-Athina,Athina,2166
+AEGEE-Athina (CA),Athina ,2166
 AEGEE-Bakı,Baku,3661
 AEGEE-Bamberg,Bamberg,514
 AEGEE-Barcelona,Barcelona,1192
@@ -18,12 +18,12 @@ AEGEE-Brussel-Bruxelles,Brussel-Bruxelles,129
 AEGEE-Bucureşti,Bucureşti,1808
 AEGEE-Budapest,Budapest,1165
 AEGEE-Burgos,Burgos,1232
-AEGEE-Castelló,Castelló,2023
+AEGEE-Castelló,Castelló,2020
 AEGEE-Catania,Catania,1817
-AEGEE-Chişinău,Chişinău,1844
+AEGEE-Chişinău (CA),Chişinău ,1844
 AEGEE-Delft,Delft,0
 AEGEE-Dresden,Dresden,657
-AEGEE-Dublin,Dublin,730
+AEGEE-Dublin (CA),Dublin ,730
 AEGEE-Eindhoven,Eindhoven,100
 AEGEE-Enschede,Enschede,174
 AEGEE-Erfurt,Erfurt,475
@@ -33,73 +33,68 @@ AEGEE-Gdańsk,Gdańsk,985
 AEGEE-Gliwice,Gliwice,1014
 AEGEE-Groningen,Groningen,200
 AEGEE-Hamburg,Hamburg,415
-AEGEE-Hatay,Hatay,3045
+AEGEE-Hatay (CA),Hatay ,3045
 AEGEE-Heidelberg,Heidelberg,420
 AEGEE-Iaşi,Iaşi,1751
 AEGEE-İstanbul,İstanbul,2229
 AEGEE-İzmir,İzmir,2320
-AEGEE-Joensuu,Joensuu,1906
-AEGEE-Kaiserslautern-Saarbrücken,Kaiserslautern-Saarbrücken,372
+AEGEE-Joensuu (CA),Joensuu ,1906
+AEGEE-Kaiserslautern-Saarbrücken (CA),Kaiserslautern-Saarbrücken ,372
 AEGEE-København,København,674
 AEGEE-Kraków,Kraków,1108
-AEGEE-Le Mans,Le Mans,535
+AEGEE-Le Mans (CA),Le Mans ,535
 AEGEE-Leiden,Leiden,18
 AEGEE-León,León,1284
 AEGEE-London,London,313
-AEGEE-Lyon,Lyon,695
-AEGEE-Maastricht,Maastricht,158
 AEGEE-Madrid,Madrid,1428
 AEGEE-Mağusa,Mağusa,2998
-AEGEE-Málaga,Málaga,1835
+AEGEE-Málaga (CA),Málaga ,1835
 AEGEE-Mannheim,Mannheim,402
-AEGEE-Maribor,Maribor,1017
-AEGEE-Milano,Milano,808
+AEGEE-Maribor (CA),Maribor ,1017
 AEGEE-Moskva,Moskva,2196
 AEGEE-Muğla,Muğla,2492
-AEGEE-München,München,671
+AEGEE-München (CA),München ,671
 AEGEE-Napoli,Napoli,1451
 AEGEE-Nijmegen,Nijmegen,104
 AEGEE-Niš,Niš,1623
 AEGEE-Novi Sad,Novi Sad,1359
 AEGEE-Osnabrück,Osnabrück,253
 AEGEE-Oviedo,Oviedo,1225
-AEGEE-Padova,Padova,917
-AEGEE-Paris,Paris,378
+AEGEE-Padova (CA),Padova ,917
+AEGEE-Paris (CA),Paris ,378
 AEGEE-Passau,Passau,749
 AEGEE-Pescara,Pescara,1294
-AEGEE-Pisa,Pisa,1025
-AEGEE-Plzeň,Plzeň,680
+AEGEE-Pisa (CA),Pisa ,1025
+AEGEE-Plzeň (CA),Plzeň ,680
 AEGEE-Poznań,Poznań,856
 AEGEE-Praha,Praha,736
-AEGEE-Roma,Roma,1280
-AEGEE-Rotterdam,Rotterdam,12
+AEGEE-Rotterdam (CA),Rotterdam ,12
 AEGEE-Salerno,Salerno,1488
-AEGEE-Sankt Peterburg,Sankt Peterburg,1825
-AEGEE-Sheffield,Sheffield,421
+AEGEE-Sankt Peterburg (CA),Sankt Peterburg ,1825
+AEGEE-Sheffield (CA),Sheffield ,421
 AEGEE-Sofia,Sofia,1755
-AEGEE-Stockholm,Stockholm,1179
+AEGEE-Stockholm (CA),Stockholm ,1179
 AEGEE-Stuttgart,Stuttgart,496
-AEGEE-Tarragona,Tarragona,1234
+AEGEE-Tarragona (CA),Tarragona ,1234
 AEGEE-Tartu,Tartu,1576
-AEGEE-Tbilisi,Tbilisi,3232
+AEGEE-Tbilisi (CA),Tbilisi ,3232
 AEGEE-Tenerife,Tenerife,3158
 AEGEE-Thessaloníki,Thessaloníki,1896
 AEGEE-Tilburg,Tilburg,71
 AEGEE-Torino,Torino,809
+AEGEE-Toulouse (CA),Toulouse ,959
 AEGEE-Treviso,Treviso,910
 AEGEE-Udine,Udine,924
 AEGEE-Utrecht,Utrecht,53
 AEGEE-Valencia,Valencia,1440
 AEGEE-Valladolid,Valladolid,1340
-AEGEE-Verona,Verona,877
 AEGEE-Warszawa,Warszawa,1134
 AEGEE-Wien,Wien,953
-AEGEE-Yerevan,Yerevan,3311
+AEGEE-Yerevan (CA),Yerevan ,3311
 AEGEE-Zaragoza,Zaragoza,1218
-AEGEE-Contact in Bihac,Bihac,1164
-AEGEE-Contact in Bratislava,Bratislava,1004
-AEGEE-Contact in Oslo,Oslo,963
-AEGEE-Contact in Prishtina,Prishtina,1631
-AEGEE-Contact in Sarajevo,Sarajevo,1381
-AEGEE-Contact in Toulouse,Toulouse,959
-AEGEE-Contact in Veszprém,Veszprém,1117
+Bihać,Bihać,1164
+Bratislava,Bratislava,1004
+Oslo,Oslo,963
+Prishtina,Prishtina,1631
+Sarajevo,Sarajevo,1381
+Veszprém,Veszprém,1117
